@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+    
+    var arr = ['durazno', 'pera', 'manzana', 'banana', 'mandarina']
+
+arr.pop()
+> "mandarina" //el arreglo queda: ["durazno", "pera", "manzana", "banana"]
+console.log(arr)
+
+arr.shift()
+> "durazno" //el arreglo queda: ["pera", "manzana", "banana"]
+console.log(arr)
+
+arr.push('naranja')
+> 4 //el arreglo queda: ["pera", "manzana", "banana", "naranja"]
+console.log(arr)
+
+arr.unshift('kiwi')
+> 5 //el arreglo queda: ["kiwi", "pera", "manzana", "banana", "naranja"]
+console.log(arr)
+
+arr.splice(0,1)
+> ["kiwi"] //el arreglo queda: ["pera", "manzana", "banana", "naranja"]
+console.log(arr)
+
+arr.splice(2,2)
+> ["banana", "naranja"] //el arreglo queda: ["pera", "manzana"]
+console.log(arr)
+
+arr.splice(2,0, "banana", "naranja")
+> [] //el arreglo queda: ["pera", "manzana", "banana", "naranja"]
+console.log(arr)
+
+arr.splice(0,1, "kiwi")
+> ["pera"] //el arreglo queda: ["kiwi", "manzana", "banana", "naranja"]
+console.log(arr)
+
+arr.reverse()
+> ["naranja", "banana", "manzana", "kiwi"] //el arreglo queda: ["naranja", "banana", "manzana", "kiwi"]
+console.log(arr)
+
+arr.sort()
+> ["banana", "kiwi", "manzana", "naranja"] //el arreglo queda: ["banana", "kiwi", "manzana", "naranja"]
+console.log(arr)
+
+arr.concat(['pera', 'mango'])
+> ["banana", "kiwi", "manzana", "naranja", "pera", "pomelo"] //el arreglo queda: ["banana", "kiwi", "manzana", "naranja"]
+console.log(arr)
+
+arr.join()
+> "banana,kiwi,manzana,naranja"
+console.log(arr)
+
+arr.indexOf('naranja')
+> 3
+console.log(arr)
+
+arr.indexOf('kiwi')
+> 1
+console.log(arr)
+
+    </script>
+
+
+</body>
+</html>

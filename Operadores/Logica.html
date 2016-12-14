@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+     <script type="text/javascript">
+      function escribe() {
+        var valor = document.rellenar.usu.value
+        var clave = document.rellenar.clave.value
+        if ((valor) == "cris" && (clave) == "cris")
+          
+         {
+                  var si = "<h4>sii</h4>"
+                 escribir =document.getElementById("caja") 
+                 escribir.innerHTML = si
+         }else{
+              var no = "<h1>" +"no" + "</h1>"
+             escribir =document.getElementById("caja") 
+                 escribir.innerHTML = no
+         }
+         }
+window.onload = function() {
+document.rellenar.ver.onclick = escribe
+} 
+    </script>
+    <style type="text/css">
+        body{
+            background-image: url(ferra-min.jpg);
+        }
+        h2,p,div{
+            color: azure;
+        }
+        #boton{
+            margin-left: 100px;
+            width: 75px;
+            height: 45px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <form name="rellenar" action="#" >
+<h2>Ingresa</h2>
+   <p> Escribe el Usuario : <input name="usu" type="text"/> </p> 
+   <p> Escribe la Contraseña: <input name="clave" type="password"/> </p> 
+        <p id="cajaboton"> <input type="button" name="ver" value="Log In" id="boton"></p>
+</form>
+    <br>
+    <div id="cajaboton"> </div>
+    
+   
+
+
+</body>
+</html>

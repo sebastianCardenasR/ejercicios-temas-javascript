@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores de Asignacion</title>
+   <link href="ocss.css" type="text/css" rel="stylesheet">
+</head>
+<body>   
+    
+
+    
+   <h3 class="titulo">Asignacion</h3>
+    
+    
+    
+<script type="text/javascript" >
+       
+    var num1 = 5
+    var num2 = 2
+     
+   
+    var asignacionsum = (function (num1,num2){
+     
+        var resultsum = num1 += num2;
+        document.write("resultado de += :  "+resultsum+"<br>")       
+
+    
+    }) 
+    
+     var asignacionresta = (function (num1,num2){
+     
+         var resultresta = num1 -= num2;   
+         document.write("resultado del -= : "+resultresta+"<br>") 
+    
+    }) 
+    
+       var asignacionmult = (function (num1,num2){
+     
+         var resultmult = num1 *= num2;
+             document.write("resultado del *= : "+resultmult+"<br>")
+    }) 
+       
+        var asignaciondivi = (function (num1,num2){
+     
+         var resultdivi = num1 /= num2;
+             document.write("resultado del /= : "+resultdivi+"<br>")
+    }) 
+        
+        var asignacionporcen = (function (num1,num2){
+     
+         var resultporcen = num1 %= num2;
+             document.write("resultado del %= : "+resultporcen+"<br>")
+    }) 
+        
+        var asignacionmenor = (function (num1,num2){
+     
+         var resultmenor = num1 <<= num2;
+             document.write("resultado del <<= : "+resultmenor+"<br>")
+    }) 
+        
+         var asignacionmayor = (function (num1,num2){
+     
+         var resultmayor= num1 >>= num2;
+             document.write("resultado del >>= : "+resultmayor+"<br>")
+    })
+         
+         var asignacionmayormayor = (function (num1,num2){
+     
+         var resultmayormayor= num1 >>>= num2;
+             document.write("resultado del >>>= : "+resultmayormayor+"<br>")
+    })
+         
+          var asignaciony = (function (num1,num2){
+     
+         var resulty = num1 &= num2;
+             document.write("resultado del &= : "+resulty+"<br>")
+    })
+            var asignacionelev = (function (num1,num2){
+     
+         var resultelev = num1 ^= num2;
+             document.write("resultado del ^= : "+resultelev+"<br>")
+    })
+            
+             var asignacionpail = (function (num1,num2){
+     
+         var resultpail = num1 |= num2;
+             document.write("resultado del |= : "+resultpail+"<br>"+"<h3>Comparacion</h3>")
+    })
+             
+             var igualdad  = (function(num1,num2){
+                 
+                 if (num1 == num2)
+                 {                    
+                  document.write("Igualdad es: "+"True"+"<br>")
+                 }else {
+                     document.write("Igualdad es: "+"False"+"<br>")
+                 }
+             })
+             
+              var diferencia = (function(num1,num2){
+                 
+                 if (num1 != num2)
+                 {                    
+                  document.write("Diferencia es: "+"True"+"<br>")
+                 }else {
+                     document.write("Diferencia es: "+"False"+"<br>")
+                 }
+             })
+              
+              var estrictoIgual = (function(num1,num2){
+                 
+                 if (num1 === num2)
+                 {                    
+                  document.write("estricto Igual es: "+"True"+"<br>")
+                 }else {
+                     document.write("estricto Igual es:"+ "False"+"<br>")
+                 }
+             })
+              
+          var estrictoDiferente = (function(num1,num2){
+                 
+                 if (num1 !== num2)
+                 {                    
+                  document.write("estricto Diferente es: "+"True"+"<br>")
+                 }else {
+                     document.write("estricto Diferente es: "+"False"+"<br>")
+                 }
+             })
+          
+           
+           var mayorque = (function(num1,num2){
+                 
+                 if (num1 > num2)
+                 {                    
+                  document.write("mayorque es: "+"True"+"<br>")
+                 }else {
+                     document.write("mayorque es: "+"False"+"<br>")
+                 }
+             })
+           
+           
+             var menorque = (function(num1,num2){
+                 
+                 if (num1 < num2)
+                 {                    
+                  document.write("menorque es: "+"True"+"<br>")
+                 }else {
+                     document.write("menorque es: "+"False"+"<br>")
+                 }
+             })
+             
+              var mayorigualque = (function(num1,num2){
+                 
+                 if (num1 >= num2)
+                 {                    
+                  document.write("mayorigualque es: "+"True"+"<br>")
+                 }else {
+                     document.write("mayorigualque es: "+"False"+"<br>")
+                 }
+             })
+           
+           
+             var menorigualque = (function(num1,num2){
+                 
+                 if (num1 <= num2)
+                 {                    
+                  document.write("menorigualque es: "+"True"+"<br>"+"<h3>Aritmeticos</h3>")
+                 }else {
+                     document.write("menorigualque es: "+"False"+"<br>"+"<h3>Aritmeticos</h3>")
+                 }
+             })
+             
+                    
+             
+              var porcentaje = (function (num1,num2){
+     
+        var resultporcentaje = num1 % num2;
+        document.write("resultado de % :  "+resultporcentaje+"<br>"+"<h4>Incremento</h4>")       
+
+    
+    }) 
+            
+              var tabla = (function(num1,num2){
+                  
+                  for (i = 1; i <= num2;i++)
+                      {
+                    var resulttabla = num1 * i;
+                    document.write(num1+"*"+i+"="+resulttabla+"<br>"+"")      
+                      }
+                  
+                  
+              })
+        
+          
+       
+    asignacionsum(5,7)
+    asignacionresta(5,7)
+    asignacionmult(5,7)
+    asignaciondivi(5,7)
+    asignacionporcen(5,7)
+    asignacionmenor(5,7)
+    asignacionmayor(5,7)
+    asignacionmayormayor(5,7)
+    asignaciony(5,7)
+    asignacionelev(5,7)
+    asignacionpail(5,7)
+    igualdad(5,7)
+    diferencia(5,7)
+    estrictoIgual("Si","Si")
+    estrictoDiferente(5,"Si")
+    mayorque(5,7)
+    menorque(5,7)
+    mayorigualque(5,7)
+    menorigualque(5,7)
+    porcentaje(5,7)
+    tabla(5,12)
+    </script>
+
+
+</body>
+</html>
